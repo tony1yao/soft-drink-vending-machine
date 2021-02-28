@@ -1,0 +1,30 @@
+<div class="main">
+  <div class="container">
+    <div class="stock-displayer">
+      <app-stock-displayer [stock]="stock"></app-stock-displayer>
+    </div>
+
+
+    <p>$1.2 per can</p>
+    <p *ngIf="!currentBalance">Please click on image to insert coins</p>
+    <p *ngIf="currentBalance">Current balance: ${{ currentBalance }}</p>
+    <div class="coin-container">
+      <img class="coinImg" *ngFor="let coin of coinsToDisplay" [src]="coin.url" [alt]="coin.name" (click)="onInsertCoin(coin)">
+    </div>
+
+    <div>
+      <mat-form-field appearance="fill">
+        <mat-label>Number to purchase</mat-label>
+        <input #input matInput type="number" [(ngModel)]="numberToPurchase">
+      </mat-form-field>
+    </div>
+
+    <div>
+      <button mat-raised-button (click) = "onPurchase()" [disabled]="!numberToPurchase" >Purchase</button>
+      <button mat-raised-button [routerLink]="['/resupply-stock']">To Resupply</button>
+    </div>
+
+  </div>
+</div>
+
+

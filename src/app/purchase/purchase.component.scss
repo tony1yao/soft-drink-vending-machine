@@ -1,0 +1,41 @@
+$width: 40vw;
+$height: 500px;
+
+@mixin  center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main {
+  @include center-content()
+}
+
+.container {
+  border: 2px solid;
+  width: $width;
+  height: $height;
+  @include center-content()
+}
+
+.stock-displayer {
+  @include center-content()
+}
+
+
+.coin-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.coinImg {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button {
+  margin-left: 5px;
+}

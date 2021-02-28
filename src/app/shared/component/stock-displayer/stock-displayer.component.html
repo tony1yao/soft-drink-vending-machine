@@ -1,0 +1,14 @@
+<div class="container" *ngIf="stock else outOfStock">
+  <div class="image-stack">
+    <div *ngFor="let style of imgClasses" [ngClass]="style">
+      <img src="../../../../assets/resources/soft-drink.jpg" alt="soft drinks">
+    </div>
+  </div>
+  <p>Current stock: {{stock}}</p>
+</div>
+
+
+<ng-template #outOfStock>
+  <p>Out of stock, please resupply stock</p>
+  <img src="../../../../assets/resources/sold-out.jpg" alt="out of stock">
+</ng-template>

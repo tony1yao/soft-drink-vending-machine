@@ -1,0 +1,67 @@
+@function startColumn($num) {
+  $startCol: 1 + (3 * $num);
+  @return #{$startCol};
+}
+
+@mixin img-stack-item ($num) {
+  grid-row: 1;
+  grid-column: startColumn($num) / span 6;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  height: 150px;
+  width: 130px;
+  float: left;
+}
+
+.image-stack {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(45, 1fr);
+}
+
+.image-stack-item-0 {
+  @include img-stack-item(0)
+}
+.image-stack-item-1 {
+  @include img-stack-item(1)
+}
+
+.image-stack-item-2 {
+  @include img-stack-item(2)
+}
+
+.image-stack-item-3 {
+  @include img-stack-item(3)
+}
+
+.image-stack-item-4 {
+  @include img-stack-item(4)
+}
+
+.image-stack-item-5 {
+  @include img-stack-item(5)
+}
+
+.image-stack-item-6 {
+  @include img-stack-item(6)
+}
+
+.image-stack-item-7 {
+  @include img-stack-item(7)
+}
+
+.image-stack-item-8 {
+  @include img-stack-item(8)
+}
+
+.image-stack-item-9 {
+  @include img-stack-item(9)
+}

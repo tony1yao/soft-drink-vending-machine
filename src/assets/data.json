@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://i.ebayimg.com/images/g/9dQAAOSwjwdeT8JH/s-l500.jpg",
+    "value": "0.1",
+    "name": "1 cent"
+  },
+  {
+    "url": "https://cdn11.bigcommerce.com/s-u3kh6nrsu2/images/stencil/1280x1280/products/9534/22337/2468__05779.1565599937.jpg",
+    "value": "0.2",
+    "name": "2 cents"
+  },
+  {
+    "url": "https://i.ebayimg.com/images/g/vUYAAOSwP8NfLN9B/s-l1600.jpg",
+    "value": "0.5",
+    "name": "5 cents"
+  },
+  {
+    "url": "https://i.ebayimg.com/images/g/v78AAOSwD3delRzm/s-l500.jpg",
+    "value": "1",
+    "name": "1 dollar"
+  },
+  {
+    "url": "https://i.ebayimg.com/images/g/nmEAAOSwCmBeVM8Y/s-l1600.png",
+    "value": "2",
+    "name": "2 dollars"
+  }
+]
